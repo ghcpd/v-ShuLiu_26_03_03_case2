@@ -87,7 +87,7 @@ setup(
             "opentelemetry-instrumentation-confluent-kafka==0.46b0",
             "opentelemetry-instrumentation-dbapi==0.46b0",
             "opentelemetry-instrumentation-django==0.46b0",
-            "opentelemetry-instrumentation-elasticsearch==0.46b0",
+            "opentelemetry-instrumentation-elasticsearch==0.60b1",
             "opentelemetry-instrumentation-falcon==0.46b0",
             "opentelemetry-instrumentation-fastapi==0.46b0",
             "opentelemetry-instrumentation-flask==0.46b0",
