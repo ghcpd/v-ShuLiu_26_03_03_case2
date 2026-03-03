@@ -101,7 +101,7 @@ setup(
             "opentelemetry-instrumentation-pika==0.46b0",
             "opentelemetry-instrumentation-psycopg==0.46b0",
             "opentelemetry-instrumentation-psycopg2==0.46b0",
-            "opentelemetry-instrumentation-pymemcache==0.46b0",
+            "opentelemetry-instrumentation-pymemcache==0.60b1",
             "opentelemetry-instrumentation-pymongo==0.46b0",
             "opentelemetry-instrumentation-pymysql==0.46b0",
             "opentelemetry-instrumentation-pyramid==0.46b0",
