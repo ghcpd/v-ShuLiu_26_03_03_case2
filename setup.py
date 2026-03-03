@@ -71,7 +71,7 @@ setup(
             # available instrumentation packages, however it's broken in recent
             # versions (after 0.41b0), see
             # https://github.com/open-telemetry/opentelemetry-python-contrib/issues/2053
-            "opentelemetry-instrumentation-aio-pika==0.46b0",
+            "opentelemetry-instrumentation-aio-pika==0.60b1",
             "opentelemetry-instrumentation-aiohttp-client==0.46b0",
             # "opentelemetry-instrumentation-aiohttp-server==0.46b0",  # broken package
             "opentelemetry-instrumentation-aiopg==0.46b0",
