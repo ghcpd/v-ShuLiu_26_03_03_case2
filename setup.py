@@ -94,7 +94,7 @@ setup(
             "opentelemetry-instrumentation-grpc==0.46b0",
             "opentelemetry-instrumentation-httpx==0.46b0",
             "opentelemetry-instrumentation-jinja2==0.46b0",
-            "opentelemetry-instrumentation-kafka-python==0.46b0",
+            "opentelemetry-instrumentation-kafka-python==0.60b1",
             "opentelemetry-instrumentation-logging==0.46b0",
             "opentelemetry-instrumentation-mysql==0.46b0",
             "opentelemetry-instrumentation-mysqlclient==0.46b0",
