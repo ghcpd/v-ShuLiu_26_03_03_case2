@@ -84,7 +84,7 @@ setup(
             "opentelemetry-instrumentation-botocore==0.46b0",
             "opentelemetry-instrumentation-cassandra==0.46b0",
             "opentelemetry-instrumentation-celery==0.46b0",
-            "opentelemetry-instrumentation-confluent-kafka==0.46b0",
+            "opentelemetry-instrumentation-confluent-kafka==0.60b1",
             "opentelemetry-instrumentation-dbapi==0.46b0",
             "opentelemetry-instrumentation-django==0.46b0",
             "opentelemetry-instrumentation-elasticsearch==0.46b0",
