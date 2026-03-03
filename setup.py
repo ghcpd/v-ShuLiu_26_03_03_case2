@@ -117,7 +117,7 @@ setup(
             "opentelemetry-instrumentation-tornado==0.46b0",
             "opentelemetry-instrumentation-tortoiseorm==0.46b0",
             "opentelemetry-instrumentation-urllib==0.46b0",
-            "opentelemetry-instrumentation-urllib3==0.46b0",
+            "opentelemetry-instrumentation-urllib3==0.60b1",
             "opentelemetry-instrumentation-wsgi==0.46b0",
         ],
         "pure_eval": ["pure_eval", "executing", "asttokens"],
