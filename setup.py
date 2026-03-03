@@ -74,7 +74,7 @@ setup(
             "opentelemetry-instrumentation-aio-pika==0.46b0",
             "opentelemetry-instrumentation-aiohttp-client==0.46b0",
             # "opentelemetry-instrumentation-aiohttp-server==0.46b0",  # broken package
-            "opentelemetry-instrumentation-aiopg==0.46b0",
+            "opentelemetry-instrumentation-aiopg==0.60b1",
             "opentelemetry-instrumentation-asgi==0.46b0",
             "opentelemetry-instrumentation-asyncio==0.46b0",
             "opentelemetry-instrumentation-asyncpg==0.46b0",
