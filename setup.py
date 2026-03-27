@@ -98,7 +98,7 @@ setup(
             "opentelemetry-instrumentation-logging==0.46b0",
             "opentelemetry-instrumentation-mysql==0.46b0",
             "opentelemetry-instrumentation-mysqlclient==0.46b0",
-            "opentelemetry-instrumentation-pika==0.46b0",
+            "opentelemetry-instrumentation-pika==0.61b0",
             "opentelemetry-instrumentation-psycopg==0.46b0",
             "opentelemetry-instrumentation-psycopg2==0.46b0",
             "opentelemetry-instrumentation-pymemcache==0.46b0",
