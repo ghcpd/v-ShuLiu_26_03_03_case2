@@ -107,7 +107,7 @@ setup(
             "opentelemetry-instrumentation-pyramid==0.46b0",
             "opentelemetry-instrumentation-redis==0.46b0",
             "opentelemetry-instrumentation-remoulade==0.46b0",
-            "opentelemetry-instrumentation-requests==0.46b0",
+            "opentelemetry-instrumentation-requests==0.61b0",
             "opentelemetry-instrumentation-sklearn==0.46b0",
             "opentelemetry-instrumentation-sqlalchemy==0.46b0",
             "opentelemetry-instrumentation-sqlite3==0.46b0",
