@@ -501,6 +501,8 @@ class Hub(with_metaclass(HubMeta)):  # type: ignore
         """
         .. deprecated:: 2.0.0
             This function is deprecated and will be removed in a future release.
+            Please consult our migration guide for an alternative approach:
+            https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing
 
         Pushes a new layer on the scope stack.
 
@@ -510,8 +512,17 @@ class Hub(with_metaclass(HubMeta)):  # type: ignore
         :returns: If no `callback` is provided, a context manager that should
             be used to pop the scope again.
         """
+        warnings.warn(
+            "sentry_sdk.push_scope is deprecated and will be removed in a future major version. "
+            "Please consult our migration guide to learn how to migrate: "
+            "https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+
         if callback is not None:
-            with self.push_scope() as scope:
+            # avoid double-warning by bypassing recursion
+            with _ScopeManager(self) as scope:
                 callback(scope)
             return None
 

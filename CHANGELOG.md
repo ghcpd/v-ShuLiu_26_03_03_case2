@@ -4,6 +4,13 @@
 
 ### Various fixes & improvements
 
+- Emit `DeprecationWarning` from `push_scope` when called (#?????) by @oss-contributor
+
+  Calling `push_scope` now logs a deprecation warning (context manager and
+  callback forms). The message describes removal in the next major version
+  and links to the migration guide at
+  https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing
+
 - Add `disabled_integrations` (#3328) by @sentrivana
 
   Disabling individual integrations is now much easier.
