@@ -4,6 +4,13 @@
 
 ### Various fixes & improvements
 
+- Emit `DeprecationWarning` when calling `push_scope` (#3350)
+
+  `push_scope` has been soft-deprecated since 2.0.0 but did not emit any runtime
+  warning. It now emits a `DeprecationWarning` telling users that the function
+  will be removed in the next major version and pointing them to the migration
+  guide. Use `sentry_sdk.new_scope` or `sentry_sdk.isolation_scope` instead.
+
 - Add `disabled_integrations` (#3328) by @sentrivana
 
   Disabling individual integrations is now much easier.
