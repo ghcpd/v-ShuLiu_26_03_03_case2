@@ -83,7 +83,7 @@ setup(
             "opentelemetry-instrumentation-boto3sqs==0.46b0",
             "opentelemetry-instrumentation-botocore==0.46b0",
             "opentelemetry-instrumentation-cassandra==0.46b0",
-            "opentelemetry-instrumentation-celery==0.46b0",
+            "opentelemetry-instrumentation-celery==0.61b0",
             "opentelemetry-instrumentation-confluent-kafka==0.46b0",
             "opentelemetry-instrumentation-dbapi==0.46b0",
             "opentelemetry-instrumentation-django==0.46b0",
