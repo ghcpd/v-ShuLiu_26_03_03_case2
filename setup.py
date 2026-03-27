@@ -104,7 +104,7 @@ setup(
             "opentelemetry-instrumentation-pymemcache==0.46b0",
             "opentelemetry-instrumentation-pymongo==0.46b0",
             "opentelemetry-instrumentation-pymysql==0.46b0",
-            "opentelemetry-instrumentation-pyramid==0.46b0",
+            "opentelemetry-instrumentation-pyramid==0.61b0",
             "opentelemetry-instrumentation-redis==0.46b0",
             "opentelemetry-instrumentation-remoulade==0.46b0",
             "opentelemetry-instrumentation-requests==0.46b0",
