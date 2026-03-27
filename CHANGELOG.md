@@ -4,6 +4,14 @@
 
 ### Various fixes & improvements
 
+- Add deprecation warning to `push_scope()` (#XXXX)
+
+  The `push_scope()` function has been deprecated since version 2.0.0 but did not emit a warning.
+  Now calling `push_scope()` (or using it as a context manager) will emit a `DeprecationWarning`
+  informing users that the function will be removed in Sentry SDK version 3.0.0.
+  See [the migration guide](https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing)
+  for recommended alternatives.
+
 - Add `disabled_integrations` (#3328) by @sentrivana
 
   Disabling individual integrations is now much easier.
