@@ -230,6 +230,11 @@ def push_scope(  # noqa: F811
 ):
     # type: (...) -> Optional[ContextManager[Scope]]
     """
+    .. deprecated:: 2.0.0
+        This function is deprecated and will be removed in the next major
+        version. Please consult our migration guide to learn how to migrate:
+        https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing
+
     Pushes a new layer on the scope stack.
 
     :param callback: If provided, this method pushes a scope, calls
@@ -238,8 +243,18 @@ def push_scope(  # noqa: F811
     :returns: If no `callback` is provided, a context manager that should
         be used to pop the scope again.
     """
+    warnings.warn(
+        "sentry_sdk.push_scope is deprecated and will be removed in the next major version. "
+        "Please consult our migration guide to learn how to migrate to the new API: "
+        "https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing",
+        DeprecationWarning,
+        stacklevel=2,
+    )
+
     if callback is not None:
-        with push_scope() as scope:
+        # avoid warning twice by directly creating manager instead of
+        # recursing through this function again
+        with _ScopeManager() as scope:
             callback(scope)
         return None
 
