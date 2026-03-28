@@ -232,14 +232,27 @@ def push_scope(  # noqa: F811
     """
     Pushes a new layer on the scope stack.
 
+    .. deprecated:: 2.0.0
+        Use the scope methods on the client or configure_scope instead.
+        This function will be removed in Sentry SDK version 3.0.0.
+        See https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing for migration instructions.
+
     :param callback: If provided, this method pushes a scope, calls
         `callback`, and pops the scope again.
 
     :returns: If no `callback` is provided, a context manager that should
         be used to pop the scope again.
     """
+    warnings.warn(
+        "push_scope() is deprecated and will be removed in Sentry SDK version 3.0.0. "
+        "See https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing for migration instructions.",
+        DeprecationWarning,
+        stacklevel=2,
+    )
+
     if callback is not None:
-        with push_scope() as scope:
+        cm = _ScopeManager()
+        with cm as scope:
             callback(scope)
         return None
 
